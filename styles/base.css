@@ -92,6 +92,13 @@ main img {
     
 }
 
+.card h1, h2
+aside h2,
+nav h1,
+section h1 {
+  font-size: 2em; /* Or any other specific font size */
+}
+
 footer {
     margin-top: 15px;
     background-color: #EAEFF2; 
