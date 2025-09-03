@@ -21,7 +21,6 @@ header {
 }
 
 
-
 nav {
     background-color: #36454f;
    
@@ -72,7 +71,7 @@ main img {
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: #fff 100%;
+    background-color: #fff;
     margin-top: 25px;
 }
 
