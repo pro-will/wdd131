@@ -1,42 +1,27 @@
-// select the DOM elements for output
-const full = document.querySelector("#full");
-const worldfull = document.querySelector("#world-full");
-const short = document.querySelector("#short");
-const medium = document.querySelector("#medium");
-const year = document.querySelector("#year");
-const month = document.querySelector("#month");
-const day = document.querySelector("#day");
-const dayofweek = document.querySelector("#dayofweek");
 
-// use the date object
-const today = new Date();
+// This function runs when the page has fully loaded.
+document.addEventListener('DOMContentLoaded', () => {
 
-full.innerHTML = `Today is <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
-worldfull.innerHTML = `UK: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-UK",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
-short.innerHTML = `Short: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "short"
-	}
-).format(today)}</span>`;
-medium.innerHTML = `Medium: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "medium"
-	}
-).format(today)}</span>`;
+    // Get the current year for the copyright.
+    const currentYear = new Date().getFullYear();
 
-year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
-month.innerHTML = `getMonth(): <span class="highlight">${today.getMonth()}</span>`;
-day.innerHTML = `getDate(): <span class="highlight">${today.getDate()}</span>`;
-dayofweek.innerHTML = `getDay(): <span class="highlight">${today.getDay()}</span>`;
+    // Select the first paragraph in the footer to display the copyright year.
+    // Assuming the footer structure is <p>Copyright...</p>
+    const copyrightParagraph = document.querySelector('footer p:first-of-type');
+
+    if (copyrightParagraph) {
+        copyrightParagraph.innerHTML = `&copy; ${currentYear} My Website`;
+    }
+
+    // Get the date the document was last modified.
+    // The document.lastModified property returns a string.
+    const lastModifiedDate = document.lastModified;
+
+    // Select the second paragraph in the footer to display the last modified date.
+    // Assuming the footer structure is <p>...last modified...</p>
+    const lastModifiedParagraph = document.querySelector('footer p:last-of-type');
+
+    if (lastModifiedParagraph) {
+        lastModifiedParagraph.innerHTML = `Last Modified: ${lastModifiedDate}`;
+    }
+});
