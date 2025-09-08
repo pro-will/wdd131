@@ -20,6 +20,10 @@ header {
     text-align: center;
 }
 
+#course-title {
+    font-weight: bold;
+}
+
 
 nav {
     background-color: #36454f;
