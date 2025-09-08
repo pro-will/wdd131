@@ -75,6 +75,11 @@ main img {
     margin-top: 25px;
 }
 
+.grid-child {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
 
 .grid-container > .grid-child {
     border: 2px solid rgb(0 0 0 / 10%);
@@ -92,11 +97,57 @@ main img {
     
 }
 
+h1 {
+    background-color:  #EAEFF2; 
+    color: #090909; 
+    text-align: center; 
+    padding: 10px;
+}
+
+.profile {
+    margin: 25px 18px;
+}
+
+.card-1 {
+    margin-top: 55px;
+}
+
+.card-1 p {
+    margin: 12px; 
+    width: 980px;
+}
+
+h2 {
+    margin-bottom: 18px; 
+    margin-left: 65px; 
+    border-bottom: 1px solid rgb(124, 122, 122); 
+    text-align: center; 
+    width: 600px;
+}
+
+.matadi-city {
+    float: left; 
+    height: 120px; 
+    margin-right: 18px;
+}
+
+h3 {
+    background-color: #EAEFF2;
+    color: #090909; 
+    margin-bottom: 12px; 
+    text-align: center; 
+    padding: 10px;
+}
+
 .card h1, h2
 aside h2,
 nav h1,
 section h1 {
   font-size: 2em; /* Or any other specific font size */
+}
+
+.box-container ul {
+    padding: 120px  45px;
 }
 
 footer {
