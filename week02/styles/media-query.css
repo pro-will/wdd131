@@ -1,5 +1,5 @@
 body {
-    font: 'Roboto', 'sans-serif';
+    font-family: 'Roboto', 'sans-serif';
 }
 
 header, main, footer {
@@ -28,6 +28,7 @@ section {
     }
 
     main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
