@@ -139,11 +139,8 @@ h3 {
     padding: 10px;
 }
 
-.card h1, h2
-aside h2,
-nav h1,
-section h1 {
-  font-size: 2em; /* Or any other specific font size */
+h1, h2, h3 {
+  font-size: 1.5em; /* Or any other specific font size */
 }
 
 .box-container ul {
