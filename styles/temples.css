@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Sansita Sans', sans-serif;
+    
+}
+
+
+
+#temples-album {
+    color: #fff;
+    margin-right: 105px;
+    margin-left: 55px;
+    white-space: nowrap;
+    padding-top: 20px;
+}
+
+main {
+    max-width: 1028px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #36454f;
+   
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+.active {
+    color: yellow;
+    
+}
+
+/* larger/wider views */
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.container-temples {
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+}
+
+.hover:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+footer {
+    margin-top: 15px;
+    background-color: #EAEFF2; 
+    color: #090909;
+    text-align: center;
+    padding: 12px 0px;
+    line-height: 1.5;
+}
