@@ -1,7 +1,18 @@
-// Get the current year
-var currentYear = new Date().getFullYear();
-document.getElementById("copyright").textContent = "© " + currentYear;
+// Footer Year + Last Modified
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
 
-// Get the last modified date of the document
-var lastModified = document.lastModified;
-document.getElementById("lastModified").textContent = "Last Modified: " + lastModified;
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+
+      // Toggle icon ☰ ↔ ✖
+      if (hamburger.textContent === "✖") {
+        hamburger.textContent = "☰";
+      } else {
+        hamburger.textContent = "✖";
+      }
+    });

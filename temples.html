@@ -15,9 +15,10 @@
 </head>
 <body>
   <header>
-     <nav>
-         <ul>
-            <span id="temples-album">Temples album</span>
+     <nav class="navbar">
+        <h1 id="temples-album">Temples album</h1>
+        <button class="hamburger" aria-label="Menu">&#9776;</button>
+         <ul class="nav-links">
             <li><a href="#home"  class="active">Home</a></li>
             <li><a href="#old">Old</a></li>
             <li><a href="#new">New</a></li>
@@ -27,61 +28,87 @@
       </nav>
   </header> 
   <main>
-     <h1>Temples Album</h1>
-     <div class="container-temples">
-        <figure>
-            <img src="images/kinshasa_temple.webp" alt="Kinshasa Temple" width="300">
-            <figcaption>Kinshasa RD Congo</figcaption>
-        </figure>
-        <figure>
-            <img src="images/abuquerque_temple_lds.jpeg" alt="Abuquerque Temple" width="410">
-            <figcaption>Abuquerque NM USA</figcaption>
-        </figure>
-        <figure>
-            <img src="images/dallas_texas_temple.jpeg" alt="Dallas Texas Temple" width="300">
-            <figcaption>Dallas TX USA</figcaption>
-        </figure>
-        <figure>
-            <img src="images/johannesburg_south_africa_temple_lds.jpeg" alt="Johannesburg South Africa Temple" width="300">
-            <figcaption>Johannesburg South Africa</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temple_rendering_cagayan_de_oro_philippines_temple.jpeg" alt="Cagayan de Oro Philippines Temple" width="300">
-            <figcaption>Cagayan de Oro Philippines</figcaption>
-        </figure>
-        <figure>
-            <img class="lindon-temple" src="images/lindon_utah_temple_exterior_rendering.webp" alt="Lindon Utah Temple" width="300">
-            <figcaption>Lindon UT USA</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temple_rendering_austin_texas_temple.jpeg" alt="Austin Texas Temple" width="300">
-            <figcaption>Austin TX USA</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temple_rendering_bakersfield_california_temple.jpeg" alt="Bakersfield California Temple" width="300">
-            <figcaption>Bakersfield CA USA</figcaption>
-        </figure>
-        <figure>
-            <img src="images/salt_lake_temple_lds.jpeg" alt="Salt Lake Temple" width="300">
-            <figcaption>Salt Lake UT USA</figcaption>
-        </figure>
-        <figure>
-            <img src="images/ogden_utah_temple.jpeg" alt="Ogden Utah Temple" width="300">
-            <figcaption>Ogden UT USA</figcaption>
-        </figure>
-        <figure>
-            <img src="images/oquirrh_mountain_utah_temple.jpeg" alt="Oquirrh Mountain Utah Temple" width="300">
-            <figcaption>Oquirrh Mountain UT USA</figcaption>
-        </figure>
-        <figure>
-            <img src="images/rio_de_janeiro_brazil_temple.jpeg" alt="Rio de Janeiro Brazil Temple" width="300">
-            <figcaption>Rio de Janeiro Brazil</figcaption>
-        </figure>
+     <h2>Temples Album</h2>
+     <div class="grid-temples">
+        <div class="temples-container">
+            <div>
+                <figure>
+                    <img src="images/kinshasa_temple.webp" alt="Kinshasa Temple" width="300">
+                    <figcaption>Kinshasa RD Congo</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/abuquerque_temple_lds.jpeg" alt="Abuquerque Temple" width="410">
+                    <figcaption>Abuquerque NM USA</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/dallas_texas_temple.jpeg" alt="Dallas Texas Temple" width="300">
+                    <figcaption>Dallas TX USA</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/johannesburg_south_africa_temple_lds.jpeg" alt="Johannesburg South Africa Temple" width="300">
+                    <figcaption>Johannesburg South Africa</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/temple_rendering_cagayan_de_oro_philippines_temple.jpeg" alt="Cagayan de Oro Philippines Temple" width="300">
+                    <figcaption>Cagayan de Oro Philippines</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="lindon-temple" src="images/lindon_utah_temple_exterior_rendering.webp" alt="Lindon Utah Temple" width="300">
+                    <figcaption>Lindon UT USA</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/temple_rendering_austin_texas_temple.jpeg" alt="Austin Texas Temple" width="300">
+                    <figcaption>Austin TX USA</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/temple_rendering_bakersfield_california_temple.jpeg" alt="Bakersfield California Temple" width="300">
+                    <figcaption>Bakersfield CA USA</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/salt_lake_temple_lds.jpeg" alt="Salt Lake Temple" width="300">
+                    <figcaption>Salt Lake UT USA</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/ogden_utah_temple.jpeg" alt="Ogden Utah Temple" width="300">
+                    <figcaption>Ogden UT USA</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/oquirrh_mountain_utah_temple.jpeg" alt="Oquirrh Mountain Utah Temple" width="300">
+                    <figcaption>Oquirrh Mountain UT USA</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/rio_de_janeiro_brazil_temple.jpeg" alt="Rio de Janeiro Brazil Temple" width="300">
+                    <figcaption>Rio de Janeiro Brazil</figcaption>
+                </figure>
+            </div>
+        </div>
      </div>
   </main> 
   <footer>
-    <p><span id="copyright"></span>© 2025 🌳 William Pelo Kibwila 🌳 Kinshasa DR Congo</p>
-    <p id="lastModified">Last modification: 9/3/2025 9:45:50</p>
+    <p>&copy; <span id="year"></span> 🌳 William Pelo Kibwila 🌳 Kinshasa DR Congo</p>
+    <p>Last modified: 9/10/2025 <span id="lastModified"></span></p>
   </footer>
 </body>
 </html>
