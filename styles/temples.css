@@ -57,7 +57,7 @@ nav a:hover {
 }
 
 /* larger/wider views */
-@media (min-width: 640px) {
+@media (min-width: 780px) {
     nav ul {
         display: flex;
     }
