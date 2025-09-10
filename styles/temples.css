@@ -35,6 +35,15 @@ header {
     text-decoration: none;
 }
 
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+.active {
+    color: yellow;
+    
+}
+
 /* Default (destop) */
 .hamburger {
     display: none;
@@ -44,6 +53,7 @@ header {
     cursor: pointer;
     color: #fff;
 }
+
 
 
 /* Mobile view */
@@ -64,23 +74,21 @@ header {
     .nav-links.show {
         display: flex;
     }
+
+    .nav ul li {
+        flex: 1 1 100%;
+    }
  
 }
 
 #temples-album {
     color: #ffffff;
-    margin-right: 250px;
+    margin-right: 200px;
     margin-left: 55px;
     white-space: nowrap;
     padding-top: 15px;
 }
 
-
-
-.active {
-    color: yellow;
-    
-}
 
 main {
     max-width: 1028px;
@@ -95,8 +103,8 @@ h1 {
 
 h2 {
     text-align: center;
-    padding: 15px;
-    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
 }
 
 
@@ -105,15 +113,7 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
     place-items: center;
-}
-
-.temples-container {
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 7px;
-    top: 0;
-    width: 100%;
+ 
 }
 
 figure {
@@ -127,12 +127,8 @@ img {
 }
 
 figcaption {
-    font-size: smaller;
+    font-size: medium;
     text-align: center;
-}
-
-.hover:hover {
-    box-shadow: 0 0 50px #333;
 }
 
 footer {
