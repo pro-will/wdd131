@@ -123,11 +123,11 @@ figure {
 img {
     width: 100%;
     height: auto;
-     margin: .5rem;
+    margin: .5rem;
 }
 
 figcaption {
-    font-size: medium;
+    font-size: small;
     text-align: center;
 }
 
