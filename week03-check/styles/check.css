@@ -1,0 +1,74 @@
+/* Global Variables */
+:root {
+    --primary-color: #f00; /* Example: Madagascar flag red */
+    --secondary-color: #fff; /* White */
+    --accent-color: #0f0; /* Example accent green */
+    --font-family: Arial, sans-serif;
+}
+
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Weather Section */
+.weather {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Pseudo-element for weather icon (large view) */
+.weather h2 .weather-icon::after {
+    content: " ⛅";
+}
+
+/* Mobile weather icon */
+.mobile-weather-icon {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile-weather-icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
