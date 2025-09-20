@@ -1,52 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 | Country Page</title>
-    <meta name="description" content="Welcome to our course WDD 131 - Dynamic Web Fundamentals. I am William Pelo student at BYU-Idaho and I am studying Web development because I like to create interactive and dynamic Websites and applications.">
-    <meta name="author" content="William Pelo Kibwila">
-    <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital@0;1&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Weather Page</title>
+  <meta name="description" content="Welcome to our course WDD 131 - Dynamic Web Fundamentals. I am William Pelo student at BYU-Idaho and I am studying Web development because I like to create interactive and dynamic Websites and applications.">
+  <meta name="author" content="William Pelo Kibwila">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="place.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital@0;1&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <h1>Democratic Republic of Congo</Congo-Kinshasa></h1>
-    </header>
-    <main>
-      <figure>
-        <img src="images/hero-bonobo1.webp" alt="Bonobo image" min-width="1000px">
-      </figure>
-      <section class="data-container">
-        <h2>Data</h2>
-        <ul>
-          <li>Area: 2.345.410km²</li>
-          <li>Population: 113 Millions</li>
-          <li>Capital: Kinshasa</li>
-          <li>Languages: Lingala, FranÇais</li>
-          <li>Currency: Congolese Franc</li>
-          <li>Time Zone: UTC+1</li>
-          <li>Calling code: +243</li>
-          <li>Internet TLD: cd</li>
-        </ul>
+  <!-- Header -->
+  <header>
+    <h1>Democratic Republic of Congo</h1>
+  </header>
+  <!-- Banner with data + weather -->
+  <div class="banner">
+    <picture>
+      <source srcset="images/hero-bonobo1.webp" media="(max-width: 600px)">
+      <source srcset="images/hero-medium.webp" media="(max-width: 1200px)">
+      <img src="images/hero-large.webp" alt="Banner Image">
+    </picture>
+    <!-- Country Data -->
+    <div class="top-left box">
+      <h2>Data</h2>
+      <p>Area: 2,345,410 km²</p>
+      <p>Population: 113 Million</p>
+      <p>Capital: Kinshasa</p>
+      <p>Languages: Lingala, Français</p>
+      <p>Currency: Congolese Franc</p>
+      <p>Time Zone: UTC+1</p>
+      <p>Calling code: +243</p>
+      <p>Internet TLD: .cd</p>
+    </div>
+
+    <!-- Weather Section -->
+    <div class="bottom-right box">
+      <section class="weather">
+        <h3>Weather <span class="weather-icon">⛅</span></h3>
+        <img id="weather-kinshasa" src="images/weather-icon.svg" alt="Weather Icon">
+        <p>Temperature: <span id="temp">28°C</span></p>
+        <p>Condition: <span id="humidity">Humidity</span></p>
+        <p>Wind: <span id="wind-speed">14 km/h</span></p>
+        <p>Wind Chill: <span id="wind-chill">23°C</span></p>
+        <img src="images/weather-icon.svg" alt="Weather Icon" class="mobile-weather-icon">
       </section>
-      <section class="weather-container">
-        <h3>Weather</h3>
-        <img src="images/weather-icon.svg" alt="weather">
-        <ul>
-          <li>Temperature: 28ºC</li>
-          <li>Now of Condition: Humidity</li>
-          <li>Wind: 10km/h</li>
-          <li>Wind Chill: 23ºC</li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; <span id="year"></span> 🌳 William Pelo Kibwila 🌳 Kinshasa DR Congo</p>
-      <p>Last modified:  <span id="lastModified"></span></p>
-    </footer>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> 🌳 William Pelo Kibwila 🌳 Kinshasa DR Congo</p>
+    <p>Last modified: 9/20/2025 4:40:20<span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>
