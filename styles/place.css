@@ -22,7 +22,9 @@ body {
 header {
   text-align: center;
   padding: 1rem;
- 
+  background: var(--primary-color);
+  color: white;
+  border-bottom: 8px solid var(--accent-color);
 }
 
 /* Banner */
@@ -95,9 +97,9 @@ h2, h3 {
 footer {
   padding: 2rem;
   text-align: center;
+  background: var(--primary-color);
   color: white;
   font-size: 0.9rem;
-  
 }
 
 /* Responsive Styles */
