@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBridge - Accueil</title>
+    <meta name="description" content="carrièrebbridge, coaching de carrière à Kinshasa, aide à la recherche d'emploi, optimisation de CV, preparation aux entretiens d'embauche, planification de carrère professionnelle, reseautage professionnel.">
+    <meta name="author" content="William Pelo Kibwila">
+    <link rel="stylesheet" href="styles/carrière-coaching.css">
+    <script src="scripts/carriere-coaching.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">CareerBridge</a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                 <li><a href="services.html">Services</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="hamburger"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Hero Banner -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Démarrer sa carrière, c’est difficile.</h1>
+                <p>CareerBridge vous accompagne dans l'aventure de votre vie professionnelle à Kinshasa.</p>
+                <a href="#contact" class="btn">Commencez &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Section de bienvenue -->
+        <section class="section container">
+            <div class="welcome-message">
+                <h2 class="section-heading">Bienvenue sur CareerBridge</h2>
+                <p>Notre mission est de vous équiper des outils, des connaissances et de la confiance nécessaires pour naviguer avec succès sur le marché du travail dynamique de Kinshasa. Que vous soyez un jeune diplômé, un professionnel en transition ou que vous cherchiez à faire progresser votre carrière, nous sommes là pour vous. Nous croyons que chaque parcours est unique et mérite un accompagnement sur mesure.</p>
+            </div>
+        </section>
+
+        <!-- Section Cartes “Parcours Carrière” -->
+        <section class="section container">
+            <h2 class="section-heading">Nos Parcours Carrière</h2>
+            <div class="cartes-container">
+                <div class="carte">
+                    <span class="carte-icone">&#x1F4BC;</span>
+                    <h3>Optimisation de CV</h3>
+                    <p>Faites bonne impression avec un CV qui vous met en valeur.</p>
+                    <a href="services.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="carte">
+                    <span class="carte-icone">&#x1F50D;</span>
+                    <h3>Préparation aux entretiens</h3>
+                    <p>Maîtrisez l'art de l'entretien et décrochez le poste de vos rêves.</p>
+                    <a href="services.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="carte">
+                    <span class="carte-icone">&#x1F4CA;</span>
+                    <h3>Planification de carrière</h3>
+                    <p>Définissez un chemin clair pour atteindre vos objectifs à long terme.</p>
+                    <a href="services.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="carte">
+                    <span class="carte-icone">&#x1F4C6;</span>
+                    <h3>Réseautage</h3>
+                    <p>Développez votre réseau professionnel et explorez de nouvelles opportunités.</p>
+                    <a href="services.html" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Témoignages -->
+        <section class="section container">
+            <h2 class="section-heading">Ce que nos clients disent</h2>
+            <div class="cartes-container">
+                <div class="carte" style="background-color: white;">
+                    <p>"Grâce à CareerBridge, j'ai trouvé la confiance pour me lancer. Leur aide a été précieuse!"</p>
+                    <p><strong>- Jean, Jeune diplômé</strong></p>
+                </div>
+                <div class="carte" style="background-color: white;">
+                    <p>"Le coaching personnalisé m'a permis de négocier un meilleur salaire. Un investissement qui vaut le coup."</p>
+                    <p><strong>- Marie, Professionnelle en transition</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Vente (Sales Pitch) -->
+        <section class="section container">
+            <div class="sales-pitch">
+                <h2>Votre carrière mérite un accompagnement sur mesure.</h2>
+                <p>
+                    Chez CareerBridge, nous comprenons que chaque parcours professionnel est unique. C'est pourquoi notre programme de **coaching personnalisé et de mentorat** est conçu pour vous. Vous serez mis en relation avec des experts de votre domaine qui vous guideront étape par étape, du renforcement de vos compétences à l'atteinte de vos objectifs de carrière les plus ambitieux.
+                </p>
+                <a href="#contact" class="btn">Je veux transformer ma carrière</a>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="section container" id="contact">
+            <h2 class="section-heading">Contactez-nous</h2>
+            <div class="form-container">
+                <div id="status-message" class="message-status"></div>
+                <form id="contact-form">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 CareerBridge. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

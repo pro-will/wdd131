@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBridge - Blog</title>
+    <style>
+        :root {
+            --couleur-primaire: #2c3e50; /* Bleu marine */
+            --couleur-secondaire: #f5f5dc; /* Beige */
+            --couleur-bouton: #3498db; /* Bleu foncé */
+            --couleur-texte: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--couleur-texte);
+            background-color: #f8f8f8;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--couleur-primaire);
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--couleur-primaire);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar a:hover {
+            color: var(--couleur-bouton);
+        }
+
+        .navbar .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar .hamburger {
+            width: 25px;
+            height: 3px;
+            background: var(--couleur-primaire);
+            position: relative;
+            transition: 0.3s;
+        }
+        .navbar .hamburger::before,
+        .navbar .hamburger::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background: var(--couleur-primaire);
+            transition: 0.3s;
+        }
+        .navbar .hamburger::before { top: -8px; }
+        .navbar .hamburger::after { top: 8px; }
+
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--couleur-primaire);
+        }
+        
+        /* Blog Articles */
+        .blog-articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .article-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .article-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 20px;
+        }
+        
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            color: var(--couleur-primaire);
+        }
+
+        .article-content p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .article-content a {
+            color: var(--couleur-bouton);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--couleur-primaire);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            .navbar .nav-links.active {
+                display: flex;
+            }
+            
+            .navbar .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">CareerBridge</a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="hamburger"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <h1 class="section-heading">Blog et Conseils de Carrière</h1>
+
+            <div class="blog-articles">
+                <div class="article-card">
+                    <img src="https://placehold.co/600x400?text=Entretien+Kinshasa" alt="Image d'un entretien d'embauche à Kinshasa">
+                    <div class="article-content">
+                        <h3>5 Astuces pour réussir vos entretiens d'embauche à Kinshasa</h3>
+                        <p>Naviguer sur le marché du travail à Kinshasa peut être un défi. Découvrez nos conseils pour vous démarquer lors de votre prochain entretien et décrocher le poste de vos rêves. </p>
+                        <a href="#">Lire la suite &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="https://placehold.co/600x400?text=Jeune+professionnel+RDC" alt="Image d'un jeune professionnel en RDC">
+                    <div class="article-content">
+                        <h3>Comment optimiser votre CV pour le marché du travail en RDC ?</h3>
+                        <p>Votre CV est votre premier contact avec un employeur. Apprenez à le personnaliser avec des mots-clés qui attirent l'attention des recruteurs locaux.
+                        </p>
+                        <a href="#">Lire la suite &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="https://placehold.co/600x400?text=Réseautage+professionnel" alt="Image de personnes qui font du réseautage professionnel">
+                    <div class="article-content">
+                        <h3>Le réseautage professionnel à Kinshasa : plus facile que vous ne le pensez</h3>
+                        <p>Construire un réseau solide est crucial pour la croissance de votre carrière. Découvrez nos astuces pour vous connecter avec des professionnels dans votre domaine et explorer de nouvelles opportunités.
+                        </p>
+                        <a href="#">Lire la suite &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="https://placehold.co/600x400?text=Développement+de+compétences" alt="Image de personnes qui développent des compétences">
+                    <div class="article-content">
+                        <h3>Les compétences clés pour un emploi durable en 2025</h3>
+                        <p>Le monde du travail évolue rapidement. Nous explorons les compétences techniques et transversales les plus recherchées par les entreprises congolaises aujourd'hui.</p>
+                        <a href="#">Lire la suite &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 CareerBridge. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('nav-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

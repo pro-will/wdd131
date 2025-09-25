@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBridge - Services</title>
+    <style>
+        :root {
+            --couleur-primaire: #2c3e50; /* Bleu marine */
+            --couleur-secondaire: #f5f5dc; /* Beige */
+            --couleur-bouton: #3498db; /* Bleu foncé */
+            --couleur-texte: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--couleur-texte);
+            background-color: #f8f8f8;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--couleur-primaire);
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--couleur-primaire);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar a:hover {
+            color: var(--couleur-bouton);
+        }
+
+        .navbar .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar .hamburger {
+            width: 25px;
+            height: 3px;
+            background: var(--couleur-primaire);
+            position: relative;
+            transition: 0.3s;
+        }
+        .navbar .hamburger::before,
+        .navbar .hamburger::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background: var(--couleur-primaire);
+            transition: 0.3s;
+        }
+        .navbar .hamburger::before { top: -8px; }
+        .navbar .hamburger::after { top: 8px; }
+
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--couleur-primaire);
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .service-card h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--couleur-primaire);
+        }
+        
+        .service-card p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        
+        .service-card ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card li {
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            background: var(--couleur-bouton);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background: var(--couleur-primaire);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            .navbar .nav-links.active {
+                display: flex;
+            }
+            
+            .navbar .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">CareerBridge</a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                 <li><a href="services.html">Services</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="hamburger"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <h1 class="section-heading">Nos Services Détaillés</h1>
+
+            <div class="service-card">
+                <h2>Optimisation de CV et de profil</h2>
+                <p>
+                    Votre CV est votre carte de visite. Nous vous aidons à le transformer en un document percutant qui attire l'attention des recruteurs et met en valeur vos compétences clés.
+                </p>
+                <ul>
+                    <li>Analyse de votre expérience professionnelle.</li>
+                    <li>Réécriture et mise en page professionnelles.</li>
+                    <li>Optimisation des mots-clés pour les logiciels de recrutement.</li>
+                    <li>Conseils pour un profil LinkedIn attrayant.</li>
+                </ul>
+                <a href="index.html#contact" class="btn">Réservez ce service</a>
+            </div>
+
+            <div class="service-card">
+                <h2>Préparation aux entretiens</h2>
+                <p>
+                    L'entretien d'embauche peut être intimidant. Notre coaching vous prépare à toutes les éventualités, des questions techniques aux entretiens comportementaux, afin que vous puissiez vous présenter avec assurance.
+                </p>
+                <ul>
+                    <li>Simulations d'entretiens personnalisées.</li>
+                    <li>Feedback sur le langage corporel et la communication.</li>
+                    <li>Techniques pour répondre aux questions difficiles.</li>
+                    <li>Conseils pour la négociation salariale.</li>
+                </ul>
+                <a href="index.html#contact" class="btn">Réservez ce service</a>
+            </div>
+
+            <div class="service-card">
+                <h2>Planification de carrière</h2>
+                <p>
+                    Où vous voyez-vous dans 5 ans ? Nous vous aidons à répondre à cette question en élaborant un plan de carrière solide et réalisable qui aligne vos objectifs personnels et professionnels.
+                </p>
+                <ul>
+                    <li>Évaluation de vos forces et faiblesses.</li>
+                    <li>Définition d'objectifs à court et long terme.</li>
+                    <li>Identification des opportunités de formation et de développement.</li>
+                    <li>Stratégies pour le développement professionnel continu.</li>
+                </ul>
+                <a href="index.html#contact" class="btn">Réservez ce service</a>
+            </div>
+            
+            <div class="service-card">
+                <h2>Coaching personnalisé et mentorat</h2>
+                <p>
+                    Pour ceux qui ont besoin d'un accompagnement sur mesure, notre programme de coaching vous met en relation avec des mentors expérimentés qui ont réussi dans votre domaine d'intérêt.
+                </p>
+                <ul>
+                    <li>Sessions individuelles avec un coach certifié.</li>
+                    <li>Développement de compétences spécifiques à votre industrie.</li>
+                    <li>Accès à notre réseau exclusif de professionnels.</li>
+                    <li>Soutien continu pour la prise de décisions importantes.</li>
+                </ul>
+                <a href="index.html#contact" class="btn">Réservez ce service</a>
+            </div>
+
+            <div class="service-card">
+                <h2>UX Design</h2>
+                <p>
+                    L'UX (expérience utilisateur) est essentielle. Nous vous guidons à travers les principes du design centré sur l'utilisateur, de la recherche à la conception, pour vous aider à créer des produits qui non seulement fonctionnent, mais qui ravissent également vos utilisateurs.
+                </p>
+                <ul>
+                    <li>Principes fondamentaux du design centré sur l'utilisateur.</li>
+                    <li>Recherche utilisateur et analyse des besoins.</li>
+                    <li>Création de wireframes et de prototypes.</li>
+                    <li>Tests d'utilisabilité pour valider vos conceptions.</li>
+                </ul>
+                <a href="index.html#contact" class="btn">Réservez ce service</a>
+            </div>
+
+            <div class="service-card">
+                <h2>Développement Web Front-End</h2>
+                <p>
+                    Maîtrisez les technologies de base du web. Apprenez à transformer des maquettes en sites web interactifs et dynamiques en utilisant les standards de l'industrie.
+                </p>
+                <ul>
+                    <li>Formation complète en HTML, CSS et JavaScript.</li>
+                    <li>Création d'interfaces utilisateur réactives et performantes.</li>
+                    <li>Utilisation de frameworks modernes comme React ou Angular.</li>
+                    <li>Bonnes pratiques de codage et débogage.</li>
+                </ul>
+                <a href="index.html#contact" class="btn">Réservez ce service</a>
+            </div>
+
+            <div class="service-card">
+                <h2>Web Design</h2>
+                <p>
+                    Le design web ne se limite pas à l'apparence. Il s'agit de l'organisation visuelle, de la hiérarchie de l'information et de l'accessibilité. Nous vous formons à créer des designs qui sont à la fois beaux et fonctionnels.
+                </p>
+                <ul>
+                    <li>Principes de la théorie des couleurs et de la typographie.</li>
+                    <li>Création de maquettes et de prototypes visuels.</li>
+                    <li>Design responsive pour tous les appareils.</li>
+                    <li>Utilisation d'outils de design (Figma, Adobe XD).</li>
+                </ul>
+                <a href="index.html#contact" class="btn">Réservez ce service</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 CareerBridge. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('nav-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
