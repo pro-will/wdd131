@@ -1,0 +1,293 @@
+:root {
+            --couleur-primaire: #2c3e50; /* Bleu marine */
+            --couleur-secondaire: #f5f5dc; /* Beige */
+            --couleur-bouton: #3498db; /* Bleu foncé */
+            --couleur-texte: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--couleur-texte);
+            background-color: #f8f8f8;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--couleur-primaire);
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--couleur-primaire);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar a:hover {
+            color: var(--couleur-bouton);
+        }
+
+        .navbar .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar .hamburger {
+            width: 25px;
+            height: 3px;
+            background: var(--couleur-primaire);
+            position: relative;
+            transition: 0.3s;
+        }
+        .navbar .hamburger::before,
+        .navbar .hamburger::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background: var(--couleur-primaire);
+            transition: 0.3s;
+        }
+        .navbar .hamburger::before { top: -8px; }
+        .navbar .hamburger::after { top: 8px; }
+
+        /* Hero banner */
+/* Banner */
+.hero-banner {
+            background: url('https://placehold.co/1200x600/60A5FA/FFFFFF?text=students+and+young+professionals+in+Kinshasa') no-repeat center center/cover;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+
+        .hero-banner .hero-image {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero-banner h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-banner p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: var(--couleur-bouton);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--couleur-primaire);
+        }
+
+        .welcome-message {
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        /* Cartes de parcours */
+        .cartes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .carte {
+            background-color: var(--couleur-secondaire);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .carte:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .carte-icone {
+            font-size: 2.5rem;
+            color: var(--couleur-bouton);
+            margin-bottom: 1rem;
+        }
+        
+        .carte h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--couleur-primaire);
+        }
+        
+        .carte p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .sales-pitch {
+            background-color: #2c3e50;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        .sales-pitch h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .sales-pitch p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* Formulaire de contact */
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .message-status {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+        }
+
+        .message-status.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .message-status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--couleur-primaire);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            .navbar .nav-links.active {
+                display: flex;
+            }
+            
+            .navbar .menu-toggle {
+                display: block;
+            }
+        }
