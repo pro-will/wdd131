@@ -11,6 +11,7 @@ h1 {
     background: #380338;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .Container-form {
@@ -21,7 +22,7 @@ h1 {
 }
 
 #product-name {
-    width: 500px;
+    width: 535px;
     height: 50px;
     margin-bottom: 15px;
     border: none;
@@ -66,10 +67,10 @@ input[type=text], input[type=range], input[type=radio] {
             pointer-events: none;
         }
 
-        /* Affichage des étoiles */
+        /* display stars */
         .stars {
             font-size: 1.5rem;
-            color: var(--couleur-etoile);
+            color: #f39c12;
             margin-bottom: 5px; /* Espace entre les étoiles et le checkbox */
             line-height: 1;
             white-space: nowrap; /* Empêche les étoiles de se casser sur plusieurs lignes */
@@ -112,14 +113,19 @@ h2 {
     font-size: medium;
 } 
 
-#date {
-    width: 500px;
-    height: 40px;
-    margin-top: 0;
-    margin-left: 0;
-    border: none;
-    cursor: pointer;
+input[type="date"] {
+  background: url('calendar-icon.png') no-repeat right 10px center;
+  background-size: 20px 20px;
+  padding-right: 40px; /* space for the icon */
+  width: 500px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
 }
+
+
+
 
 /* The container */
 .container {
@@ -213,7 +219,7 @@ h2 {
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 10px;
     background-color: #380338;
     color: #ffffff;
     text-align: center;

@@ -1,33 +1,34 @@
 const products = [
   {
     id: "product-name",
-    name: "product-name",
+    name: "Product Name",
     averagerating: 4.5
   },
   {
-    id: "fc-2050",
-    name: "rating filter",
+    id: "rating-filter",
+    name: "Overall Rating",
     averagerating: 4.7
   },
   {
-    id: "date-1000",
-    name: "date filter",
+    id: "date",
+    name: "Date of Installation",
     averagerating: 3.5
   },
   {
-    id: "comments-3000",
-    name: "comments",
+    id: "comments",
+    name: "Written Review",
     averagerating: 3.9
   },
   {
-    id: "name-4000",
-    name: "name",
+    id: "name",
+    name: "User Name",
     averagerating: 5.0
   }
 ];
 
-//Add current year in footer
+   // Add current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Add last modified date
+  // Add last modified date
 document.getElementById("lastModified").textContent = document.lastModified;
+
