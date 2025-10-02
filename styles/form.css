@@ -28,6 +28,17 @@ h1 {
     border: none;
 }
 
+.label-product-name {
+  font-size: medium;
+  margin-top: 12px;
+  display: inline-block; /* so margin-top works */
+}
+
+.section-heading {
+  margin-bottom: 6px;
+  font-size: medium;
+}
+
 
 label {
 	display: block;
