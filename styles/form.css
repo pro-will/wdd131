@@ -16,7 +16,7 @@ h1 {
 
 .Container-form {
     background: #f5e4f5;
-    border: 1px solid #d9cbd9;
+    border: none;
     border-radius: 10px;
    
 }
@@ -43,7 +43,7 @@ h1 {
 label {
 	display: block;
 	font-weight: 600;
-    font-size: medium;
+  font-size: medium;
 }
 
 input[type=text], input[type=range], input[type=radio] {
@@ -52,73 +52,91 @@ input[type=text], input[type=range], input[type=radio] {
 }
 
  /* --- Styles pour le composant de filtre d'évaluation --- */
-        .rating-filter-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
+.rating-filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 
-        .rating-option {
-            cursor: pointer;
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            transition: opacity 0.2s;
-        }
+.rating-option {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.2s;
+}
 
-        /* Cacher l'input radio natif */
-        .rating-option input[type="radio"] {
-            position: absolute;
-            opacity: 0;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            pointer-events: none;
-        }
+ /* Cacher l'input radio natif */
+.rating-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    pointer-events: none;
+}
 
-        /* display stars */
-        .stars {
-            font-size: 1.5rem;
-            color: #f39c12;
-            margin-bottom: 5px; /* Espace entre les étoiles et le checkbox */
-            line-height: 1;
-            white-space: nowrap; /* Empêche les étoiles de se casser sur plusieurs lignes */
-        }
+.v-overlay[data-v-f8a5eb04],
+.v-overlay-container[data-v-f8a5eb04] {
+  pointer-events: none;
+}
+
+.modal-fulfill[data-v-f8a5eb04] {
+  pointer-events: auto;
+}
+
+.modal-overlay[data-v-f8a5eb04] {
+  pointer-events: auto;
+}
+
+/* Example for rating radios */
+.rating-option input[type="radio"] {
+  display: none; /* hides the native radio */
+}
+
+
+/* display stars */
+.stars {
+  font-size: 1.5rem;
+  color: #f39c12;
+  margin-bottom: 5px; /* Espace entre les étoiles et le checkbox */
+  line-height: 1;
+  white-space: nowrap; /* Empêche les étoiles de se casser sur plusieurs lignes */
+}
         
-        /* Conteneur pour l'alignement vertical */
-        .rating-display {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+/* Conteneur pour l'alignement vertical */
+.rating-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        /* Style du checkbox circulaire (l'élément visuel) */
-        .custom-checkbox {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 2px solid var(--couleur-primaire);
-            background-color: white;
-            box-shadow: inset 0 0 0 0 white; /* Pour la transition */
-            transition: all 0.2s ease-in-out;
-            display: block;
-            position: relative;
-            /* Le checkbox est centré sous les étoiles grâce au flex-direction: column */
-        }
+ /* Style du checkbox circulaire (l'élément visuel) */
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--couleur-primaire);
+  background-color: white;
+  box-shadow: inset 0 0 0 0 white; /* Pour la transition */
+  transition: all 0.2s ease-in-out;
+  display: block;
+  position: relative;
+}
 
-        /* Style lorsque le radio est COCHÉ */
-        .rating-option input[type="radio"]:checked + .rating-display .custom-checkbox {
-            background-color: var(--couleur-bouton); /* Remplissage bleu foncé */
-            border-color: var(--couleur-bouton);
-            box-shadow: inset 0 0 0 3px white; /* Effet de cercle intérieur blanc */
-        }
+/* Style lorsque le radio est COCHÉ */
+.rating-option input[type="radio"]:checked + .rating-display .custom-checkbox {
+  background-color: var(--couleur-bouton); /* Remplissage bleu foncé */
+  border-color: var(--couleur-bouton);
+  box-shadow: inset 0 0 0 3px white; /* Effet de cercle intérieur blanc */
+}
         
-        /* Effet au survol */
-        .rating-option:hover {
-            opacity: 0.8;
-        }
+ /* Effet au survol */
+ .rating-option:hover {
+    opacity: 0.8;
+  }
 
 h2 {
     font-size: medium;
@@ -235,6 +253,5 @@ footer {
     background-color: #380338;
     color: #ffffff;
     text-align: center;
-    padding: 10px 0px;
-    line-height: 1.5;
+    padding: 5px 0px;
 }
