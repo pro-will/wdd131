@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #333;
+  max-width: 600px;
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+  background: #2b0303;
+  color: #fff;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #ebdde7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(222, 77, 15, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label, legend {
+  font-weight: bold;
+}
+
+input[type="text"], select, textarea, input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background: #004999;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}

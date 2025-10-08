@@ -1,34 +1,15 @@
+// Product Array
 const products = [
-  {
-    id: "product-name",
-    name: "Laptop",
-    averagerating: 4.5
-  },
-  {
-    id: "product-name2",
-    name: "Smartphone",
-    averagerating: 4.7
-  },
-  {
-    id: "product-name3",
-    name: "Tablet",
-    averagerating: 3.5
-  },
-  {
-    id: "product-name4",
-    name: "Headphones",
-    averagerating: 3.9
-  },
-  {
-    id: "product-name5",
-    name: "Smartwatch",
-    averagerating: 5.0
-  }
+  { id: "p1", name: "Laptop" },
+  { id: "p2", name: "Smartphone" },
+  { id: "p3", name: "Tablet" },
+  { id: "p4", name: "Headphones" },
+  { id: "p5", name: "Smartwatch" }
 ];
 
 // Populate select options
 document.addEventListener("DOMContentLoaded", () => {
-  const productSelect = document.getElementById("product-name");
+  const productSelect = document.getElementById("product");
   if (productSelect) {
     products.forEach(product => {
       const option = document.createElement("option");
@@ -38,8 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
-    // Add current year in footer
+  // Add current year in footer
   document.getElementById("year").textContent = new Date().getFullYear();
 
   // Add last modified date

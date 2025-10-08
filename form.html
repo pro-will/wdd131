@@ -16,12 +16,10 @@
     <h1>Product Review</h1>
     <form class="Container-form" method="get" action="review.html">
         <fieldset>
-            <label for="product-name" class="label-product-name">Product Name</label>
+            <label for="product-name" class="label-product-name">Product Name:</label>
             <select name="product-name" id="product-name" required>
-                <option value="" disabled selected>Select a Product</option>
-                <option value="Product-name">Product 1</option>
-                <option value="Product-name">Product 2</option>
-                <option value="Product-name">Product 3</option>
+                <option value="" disabled selected>Select a Product...</option>
+                <!-- Options will be populated by JavaScript -->
             </select>
            <!-- Section Overall Rating -->
         <section class="section container" style="padding: 0 0 40px 0;">
@@ -78,19 +76,19 @@
         <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" required>
   
         <h2 >Which Feature did you find useful in the product?(Check all that apply)</h2>
-        <label class="container">Durability
+        <label class="container">Durable
             <input type="checkbox" checked>
             <span class="checkmark"></span>
         </label>
-        <label class="container">Ease of Use
+        <label class="container">Affordable
             <input type="checkbox">
             <span class="checkmark"></span>
         </label>
-        <label class="container">Performance
+        <label class="container">Eco-Friendly
             <input type="checkbox">
             <span class="checkmark"></span>
         </label>
-         <label class="container">Design
+         <label class="container">Easy to Use
             <input type="checkbox">
             <span class="checkmark"></span>
          </label>

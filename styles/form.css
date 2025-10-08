@@ -15,7 +15,7 @@ h1 {
 }
 
 .Container-form {
-    background: #d9cbd9;
+    background: #f5e4f5;
     border: 1px solid #d9cbd9;
     border-radius: 10px;
    
@@ -223,7 +223,8 @@ input[type="date"] {
     width: 520px;
     height: 50px;
     margin: 20px 0 20px 0;
-    background-color: #ffffff;
+    background-color: #086dda;
+    color: #ffffff;
     border: 2px solid #9a9a9a;
     font-weight: 700;
     cursor: pointer;
