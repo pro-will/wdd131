@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBridge - Home</title>
+    <meta name="description" content="CareerBridge, career coaching in Kinshasa, job search assistance, CV optimization, interview preparation, professional career planning, networking.">
+    <meta name="author" content="William Pelo Kibwila">
+    <link rel="stylesheet" href="styles/career-coaching.css">
+    <script src="scripts/career-coaching.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">CareerBridge</a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="hamburger"></span>
+            </div>
+        </div>
+    </header>
+
+   <main>
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>Starting your career is tough.</h1>
+            <p>CareerBridge supports you in the adventure of your professional life in Kinshasa.</p>
+            <a href="#contact" class="btn">Get Started &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="section container">
+        <div class="welcome-message">
+            <h2 class="section-heading">Welcome to CareerBridge</h2>
+            <p>Our mission is to equip you with the tools, knowledge, and confidence necessary to successfully navigate Kinshasa’s dynamic job market. Whether you’re a recent graduate, a professional in transition, or looking to advance your career, we’re here for you. We believe every journey is unique and deserves tailored guidance.</p>
+        </div>
+    </section>
+
+    <!-- Career Path Cards Section -->
+    <section class="section container">
+        <h2 class="section-heading">Our Career Paths</h2>
+        <div class="cartes-container">
+            <div class="carte">
+                <span class="carte-icone">&#x1F4BC;</span>
+                <h3>Resume Optimization</h3>
+                <p>Make a strong impression with a resume that highlights your strengths.</p>
+                <a href="services.html" class="btn">Learn More</a>
+            </div>
+            <div class="carte">
+                <span class="carte-icone">&#x1F50D;</span>
+                <h3>Interview Preparation</h3>
+                <p>Master the art of interviewing and land your dream job.</p>
+                <a href="services.html" class="btn">Learn More</a>
+            </div>
+            <div class="carte">
+                <span class="carte-icone">&#x1F4CA;</span>
+                <h3>Career Planning</h3>
+                <p>Set a clear path to reach your long-term goals.</p>
+                <a href="services.html" class="btn">Learn More</a>
+            </div>
+            <div class="carte">
+                <span class="carte-icone">&#x1F4C6;</span>
+                <h3>Networking</h3>
+                <p>Grow your professional network and explore new opportunities.</p>
+                <a href="services.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section container">
+        <h2 class="section-heading">What Our Clients Say</h2>
+        <div class="cartes-container">
+            <div class="carte" style="background-color: white;">
+                <p>"Thanks to CareerBridge, I found the confidence to get started. Their help was invaluable!"</p>
+                <p><strong>- Jean, Recent Graduate</strong></p>
+            </div>
+            <div class="carte" style="background-color: white;">
+                <p>"The personalized coaching helped me negotiate a better salary. An investment worth making."</p>
+                <p><strong>- Marie, Professional in Transition</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales Pitch Section -->
+    <section class="section container">
+        <div class="sales-pitch">
+            <h2>Your career deserves personalized support.</h2>
+            <p>
+                At CareerBridge, we understand that every career path is unique. That’s why our **personalized coaching and mentoring program** is designed for you. You’ll be connected with industry experts who will guide you step by step—from building your skills to achieving your most ambitious career goals.
+            </p>
+            <a href="#contact" class="btn">I want to transform my career</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section container" id="contact">
+        <h2 class="section-heading">Contact Us</h2>
+        <div class="form-container">
+            <div id="status-message" class="message-status"></div>
+            <form id="contact-form">
+                <label for="nom">Name:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2025 CareerBridge 🌳 William Pelo Kibwila 🌳 Kinshasa DR Congo. All rights reserved.</p>
+    <p>Last modified:  <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
