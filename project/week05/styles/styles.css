@@ -56,3 +56,12 @@ fieldset {
   padding: 10px;
   border-radius: 4px;
 }
+
+/* display stars */
+.stars {
+  font-size: 1.2rem;
+  color: #f39c12;
+  margin-bottom: 5px; 
+  line-height: 1;
+  white-space: nowrap; 
+}
