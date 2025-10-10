@@ -1,13 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
-            // Menu mobile
-            const menuToggle = document.getElementById('menu-toggle');
-            const navMenu = document.getElementById('nav-menu');
+// Footer Year + Last Modified
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
 
-            menuToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-            });
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
 
-            // Formulaire de contact
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+
+      // Toggle icon ☰ ↔ ✖
+      if (hamburger.textContent === "✖") {
+        hamburger.textContent = "☰";
+      } else {
+        hamburger.textContent = "✖";
+      }
+    });
+
+
+// Formulaire de contact
             const contactForm = document.getElementById('contact-form');
             const statusMessage = document.getElementById('status-message');
 
@@ -42,9 +53,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 contactForm.reset();
                 console.log('Soumissions stockées :', soumissions);
-            });
-});
-        
-    // Footer Year + Last Modified
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+        });
+      
