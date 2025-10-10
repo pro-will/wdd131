@@ -1,3 +1,61 @@
+ // --- DÉMONSTRATION : JavaScript Arrays et Array Methods ---
+        // Structure de données simple utilisée pour la démo de Conditional Branching
+        const careerPaths = [
+            { level: 'student', suggestion: 'Optimisation de CV et Préparation aux entretiens', link: 'services.html#cv' },
+            { level: 'junior', suggestion: 'Développement de compétences clés et Réseautage', link: 'services.html#networking' },
+            { level: 'mid', suggestion: 'Planification stratégique de carrière et Mentorat', link: 'services.html#mentoring' },
+            { level: 'senior', suggestion: 'Transition de carrière ou Leadership Coaching', link: 'services.html#leadership' }
+        ];
+
+        function handleCareerQuiz(event) {
+            event.preventDefault();
+
+            const level = document.getElementById('experience-level').value;
+            const resultBox = document.getElementById('quiz-result');
+            const resultText = resultBox.querySelector('.result-text');
+            const resultLink = document.getElementById('quiz-link');
+            
+            // --- DÉMONSTRATION : JavaScript Conditional Branching (if/else) ---
+            // Recherche du chemin correspondant dans le tableau (Array Methods: find)
+            const path = careerPaths.find(p => p.level === level);
+            
+            let suggestion = "Veuillez sélectionner un niveau d'expérience valide.";
+            let destinationLink = "#";
+            let showLink = false;
+
+            if (path) {
+                // Utilisation de la logique conditionnelle pour déterminer l'affichage
+                suggestion = `Pour votre niveau (${level.toUpperCase()}), nous vous recommandons : ${path.suggestion}.`;
+                destinationLink = path.link;
+                showLink = true;
+            } 
+            
+            // Affichage des résultats
+            resultText.textContent = suggestion;
+            resultLink.href = destinationLink;
+            resultLink.style.display = showLink ? 'inline-block' : 'none';
+            resultBox.style.display = 'block';
+        }
+
+        // --- DÉMONSTRATION : JavaScript localStorage (Sauvegarde d'état) ---
+        function loadContactFormState() {
+            // Charge les données sauvegardées
+            const savedName = localStorage.getItem('contact_form_name');
+            const savedEmail = localStorage.getItem('contact_form_email');
+            
+            if (savedName) document.getElementById('nom').value = savedName;
+            if (savedEmail) document.getElementById('email').value = savedEmail;
+        }
+
+        function saveContactFormState() {
+            // Sauvegarde les données à chaque changement
+            const nameInput = document.getElementById('nom');
+            const emailInput = document.getElementById('email');
+            
+            if (nameInput) localStorage.setItem('contact_form_name', nameInput.value);
+            if (emailInput) localStorage.setItem('contact_form_email', emailInput.value);
+        }
+
 // Footer Year + Last Modified
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;

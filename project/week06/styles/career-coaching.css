@@ -324,4 +324,56 @@ body {
     .navbar .menu-toggle {
         display: block;
     }
-}    
+} 
+
+/* --- Styles pour l'Outil de Suggestion de Carrière --- */
+.career-quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.quiz-form {
+    text-align: left;
+    margin-top: 20px;
+}
+.quiz-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--couleur-primaire);
+}
+.quiz-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+.quiz-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.quiz-result-box {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--couleur-bouton);
+    background-color: #eaf4fb;
+    text-align: center;
+}
+.result-title {
+    color: var(--couleur-primaire);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.btn-secondary {
+    background: #f1c40f; /* Jaune pour l'accent */
+    margin-top: 15px;
+    display: inline-block !important;
+}

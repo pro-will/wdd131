@@ -44,6 +44,34 @@
             <p>Our mission is to equip you with the tools, knowledge, and confidence necessary to successfully navigate Kinshasa’s dynamic job market. Whether you’re a recent graduate, a professional in transition, or looking to advance your career, we’re here for you. We believe every journey is unique and deserves tailored guidance.</p>
         </div>
     </section>
+    
+    <!-- Career Suggestion Section (JS Conditional Branching Demo) -->
+<section class="section container" style="padding-top: 0;">
+    <div class="career-quiz-container">
+        <h2 class="section-heading">Discover Your Next Step</h2>
+        <p class="text-center mb-6">Answer this quick question for a personalized suggestion.</p>
+        <form id="career-quiz-form" class="quiz-form">
+            <label for="experience-level" class="quiz-label">
+                What is your current level of experience?
+            </label>
+            <select id="experience-level" class="quiz-input" required>
+                <option value="" disabled selected>-- Select your level --</option>
+                <option value="student">Student / Graduate with no experience</option>
+                <option value="junior">Junior (1-3 years of experience)</option>
+                <option value="mid">Mid-level (3-7 years of experience)</option>
+                <option value="senior">Senior (7+ years / Career transition)</option>
+            </select>
+            
+            <button type="submit" class="btn quiz-btn">Get My Suggestion</button>
+        </form>
+        
+        <div id="quiz-result" class="quiz-result-box" style="display: none;">
+            <h3 class="result-title">Result:</h3>
+            <p class="result-text"></p>
+            <a href="#" class="btn btn-secondary" id="quiz-link" style="display: none;">View Resources</a>
+        </div>
+    </div>
+</section>
 
     <!-- Career Path Cards Section -->
     <section class="section container">
